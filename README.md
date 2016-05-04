@@ -10,4 +10,7 @@ Allow PHPStorm to compile using the tsconfig.json file (or just compile manually
 
 Run the Jasmine tests:
 - in PHPStorm, enable the NodeJS plugin by navigating to Settings --> Plugins --> Browse Repositories and query for "NodeJS"
-- create a NodeJS run configuration which
+- create a NodeJS run configuration to run the Jasmine tests
+![image][]
+
+[image]: https://github.com/Sean-Brown/ChainableHtml/blob/master/doc/jasmine.PNG?raw=true
