@@ -1,0 +1,30 @@
+{
+  "name": "chainable_html",
+  "version": "0.0.0",
+  "description": "Library for chaining together HTML elements as opposed to using text concatenation",
+  "main": "index.js",
+  "engine": {
+    "node": "6.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sean-Brown/ChainableHtml.git"
+  },
+  "author": "Sean Brown",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/Sean-Brown/ChainableHtml/issues"
+  },
+  "devDependencies": {
+    "jasmine": "~2.4.1",
+    "jasmine-node": "^1.14.5"
+  },
+  "dependencies": {
+    "tsc": "^1.20150623.0",
+    "typescript": "~1.8.10",
+    "typings": "~0.8.1"
+  }
+}

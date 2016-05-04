@@ -1,0 +1,22 @@
+/// <reference path="../typings/main/ambient/jasmine/index.d.ts" />
+
+import {ChainableHtml, BaseChainableOptions, ChainableClickHtml, ClickableOptions} from "../index";
+
+describe("Functional tests", function() {
+    it("creates a basic div", function() {
+        var chain = new ChainableHtml();
+        chain = chain.div(new BaseChainableOptions());
+        chain = chain.endDiv();
+        expect(chain.html).toEqual("<div id='' class='' style=''></div>");
+    });
+    it("escapes single and double quotes in attribute values", function() {
+         var chain = new ChainableHtml();
+        chain = chain.div(new BaseChainableOptions("'oh no\""));
+        expect(chain.html).toEqual("<div id='\\'oh no\\\"' class='' style=''>");
+    });
+    it("chains clickable elements", function() {
+        var chain = new ChainableClickHtml();
+        chain = chain.div(new ClickableOptions("", "", "", "yay"));
+        expect(chain.html).toEqual("<div id='' class='' style='' onclick='yay'>");
+    });
+});
